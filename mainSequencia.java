@@ -17,18 +17,16 @@ public class mainSequencia {
 
             if (opcao == 1) {
                 System.out.println("Informe a quantidade de elementos do Vetor: ");
-              S = sequencia.leSequencia(s.nextInt());
+                S = sequencia.leSequencia(s.nextInt());
             } else if (opcao == 2) {
                 System.out.println("(1) Exibir impares");
                 System.out.println("(2) Exibir pares");
-                System.out.println("Exibir vetor");
+                System.out.println("(3) Exibir vetor");
                 sequencia.exibeElementos(S, s.nextInt());
             } else if (opcao == 3) {
-                sequencia.somaSequencia(S);
-
+                System.out.println(Funcoes.somaSequencia(S));
             } else if (opcao == 4) {
-                sequencia.produtoSimples(S);
-
+                System.out.println(sequencia.produtoSimples(S));
             } else if (opcao == 5) {
                 System.out.println("Informe o vetor T:");
                 T = sequencia.leSequencia(S.length);
